@@ -1,6 +1,7 @@
 <script lang="ts">
   import "../app.postcss";
   import Header from "$lib/components/header.svelte";
+  import Footer from "$lib/components/footer.svelte";
   import { ogImageUrl } from "$lib/utils/constants";
   import { AppShell, Modal, Toast, type ModalComponent} from '@skeletonlabs/skeleton';
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
@@ -83,4 +84,7 @@
   <div class="grid place-content-center h-full sm:py-6">
     <slot />
   </div>
+	<svelte:fragment slot="footer">
+    <Footer />
+  </svelte:fragment>
 </AppShell>
