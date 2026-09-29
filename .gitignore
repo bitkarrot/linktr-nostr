@@ -12,3 +12,5 @@ vite.config.ts.timestamp-*
 TODO.md
 try
 .aider*
+.vercel
+.env*
